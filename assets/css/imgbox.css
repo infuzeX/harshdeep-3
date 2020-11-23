@@ -1,0 +1,89 @@
+.container
+{
+  width: auto;
+
+   margin: 70px auto 0;
+   /* display: flex;
+   flex-direction: row;
+    flex-wrap:wrap; */
+}
+.container .box
+{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background: #ff0;
+  text-align: center;
+  margin: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 10px;
+}
+.container .box .imgBox
+{
+  position: relative;
+  overflow: hidden;
+}
+.container .box .imgBox img{
+  max-width: 100%;
+  max-height:100%;
+  transition: transform 2s;
+}
+.container .box:hover .imgBox img
+{
+  transform: scale(1.2);
+
+}
+.container .box .details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.5);
+  transform: scaleY(0);
+  transition: transform .5s;
+
+}
+.container .box:hover .details {
+  transform: scaleY(1);
+}
+
+
+.container .box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+
+}
+.container .box .details .content h1
+{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ff0;
+}
+.container .box .details .content p
+{
+  margin:10px 0 0;
+  padding: 0;
+  font-size: 15px;
+  color: #fff;
+}
+.services-block-two .inner-box .image-box {
+  
+
+  
+}
+.services-block-two .inner-box .image-box img {
+  
+}
+.services-block-two .inner-box .image-box .overlay-box{
+ 
+  background-color: rgba(51, 51, 51, 0.8);
+}
+.info-section .info-box .info-column .info-detail .text{
+  font-size: 1em;
+}
